@@ -1,16 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script> 
-    <title>Document</title>
+    <script src="script.js" defer></script>
+    <title>IUI website</title>
 </head>
+
 <body>
     <div id="button-container">
-        <button class="test-button without-ai">Test Application <b>Without</b> AI</button>
+        <button class="test-button without-ai">Test Application Without AI</button>
         <button class="test-button with-ai">Test Application With AI</button>
     </div>
+    <div id="main">
+        <nav class="navbar">
+            <div class="nav-logo">RecipeApp</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Browse Recipes</a></li>
+                <li><a href="#">Meal Planner</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+            <a href="#">Settings</a>
+        </nav>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search by ingredients or dietary preferences..." />
+            <button class="search-button">Search Recipes</button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Filters Sidebar -->
+            <aside class="filters-sidebar">
+                <h3>Filters</h3>
+                <div class="filter-group">
+                    <h4>Dietary Restrictions / Allergies</h4>
+                    <label><input type="checkbox" name="diet" /> Gluten-Free</label>
+                    <label><input type="checkbox" name="diet" /> Vegetarian</label>
+                    <label><input type="checkbox" name="diet" /> Vegan</label>
+                    <label><input type="checkbox" name="diet" /> Nut allergy</label>
+                    <label><input type="checkbox" name="diet" /> Lactose intolerance</label>
+                </div>
+                <div class="filter-group">
+                    <h4>Cuisine</h4>
+                    <label><input type="checkbox" name="cuisine" /> Italian</label>
+                    <label><input type="checkbox" name="cuisine" /> Asian</label>
+                    <label><input type="checkbox" name="cuisine" /> Mexican</label>
+                </div>
+                <div class="filter-group">
+                    <h4>Preparation Time</h4>
+                    <label><input type="checkbox" name="prep-time" /> Under 30 Minutes</label>
+                    <label><input type="checkbox" name="prep-time" /> Under 1 Hour</label>
+                </div>
+                <div class="filter-group">
+                    <h4>Portion size</h4>
+                    <label><input type="checkbox" name="appliances" /> 1 person</label>
+                    <label><input type="checkbox" name="appliances" /> 2 people</label>
+                    <label><input type="checkbox" name="appliances" /> 3 people</label>
+                    <label><input type="checkbox" name="appliances" /> 4 people or more</label>
+                </div>
+                <div class="filter-group">
+                    <h4>Kitchen Appliances</h4>
+                    <label><input type="checkbox" name="appliances" /> Oven</label>
+                    <label><input type="checkbox" name="appliances" /> Air Fryer</label>
+                    <label><input type="checkbox" name="appliances" /> Fryer</label>
+                    <label><input type="checkbox" name="appliances" /> Rice Cooker</label>
+                    <label><input type="checkbox" name="appliances" /> Microwave</label>
+                    <label><input type="checkbox" name="appliances" /> Stand Mixer</label>
+                </div>
+                <div class="filter-group">
+                    <h4>Extras</h4>
+                    <label><input type="checkbox" name="extras" /> For Weight Loss</label>
+                    <label><input type="checkbox" name="extras" /> Budget-friendly</label>
+                </div>
+            </aside>
+
+            <!-- Recipe Categories -->
+            <section class="recipe-categories">
+                <h2>Recipe Categories</h2>
+                <div class="category-grid">
+                    <div class="category-card">Breakfast</div>
+                    <div class="category-card">Lunch</div>
+                    <div class="category-card">Dinner</div>
+                    <div class="category-card">Drinks</div>
+                    <div class="category-card">Soups</div>
+                    <div class="category-card">Salads</div>
+                    <div class="category-card">Beverages</div>
+                    <div class="category-card">Holiday special</div>
+                    <div class="category-card">Snacks</div>
+                    <div class="category-card">Desserts</div>
+                </div>
+            </section>
+
+            <!-- Recipe Display Area -->
+            <section class="recipe-display">
+                <h2>Recipes</h2>
+                <div class="recipe-grid">
+                    <div class="recipe-card">
+                        <img src="img/recipe1.jpg" class="image-recipe" alt="Recipe 1" />
+                        <h3>Spaghetti Aglio e Olio</h3>
+                        <p>Preparation Time: 15 mins</p>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="img/recipe2.jpg" class="image-recipe" alt="Recipe 2" />
+                        <h3>Caprese Chicken Skillet</h3>
+                        <p>Preparation Time: 25 mins</p>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="img/recipe3.jpg" class="image-recipe" alt="Recipe 3" />
+                        <h3>Italian Sausage and Pepper Stir-Fry</h3>
+                        <p>Preparation Time: 20 mins</p>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="img/recipe4.jpg" class="image-recipe" alt="Recipe 3" />
+                        <h3>Margherita Flatbread Pizza</h3>
+                        <p>Preparation Time: 20 mins</p>
+                    </div>
+                </div>
+            </section>
+            <section class="recipe-display-ai">
+                <h2>Recipes</h2>
+                <div class="recipe-grid">
+                    <div class="recipe-card">
+                        <img src="img/recipe1.jpg" class="image-recipe" alt="Recipe 1" />
+                        <h3>Spaghetti Aglio e Olio</h3>
+                        <p>Preparation Time: 15 mins</p>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="img/recipe2.jpg" class="image-recipe" alt="Recipe 2" />
+                        <h3>Caprese Chicken Skillet</h3>
+                        <p>Preparation Time: 25 mins</p>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="img/recipe3.jpg" class="image-recipe" alt="Recipe 3" />
+                        <h3>Italian Sausage and Pepper Stir-Fry</h3>
+                        <p>Preparation Time: 20 mins</p>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="img/recipe4.jpg" class="image-recipe" alt="Recipe 3" />
+                        <h3>Margherita Flatbread Pizza</h3>
+                        <p>Preparation Time: 20 mins</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
 </body>
+
 </html>
