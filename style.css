@@ -185,3 +185,9 @@ input:disabled + label {
     height: 300px;
     object-fit: cover;
 }
+
+.image-recipe-ai {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}

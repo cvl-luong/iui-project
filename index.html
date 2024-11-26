@@ -16,7 +16,7 @@
     </div>
     <div id="main">
         <nav class="navbar">
-            <div class="nav-logo">RecipeApp</div>
+            <div class="nav-logo">iRecipe</div>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Browse Recipes</a></li>
@@ -42,7 +42,7 @@
                     <label><input type="checkbox" name="diet" /> Gluten-Free</label>
                     <label><input type="checkbox" name="diet" /> Vegetarian</label>
                     <label><input type="checkbox" name="diet" /> Vegan</label>
-                    <label><input type="checkbox" name="diet" /> Nut allergy</label>
+                    <label><input type="checkbox" name="diet" class="checkbox-ai"/> Nut allergy</label>
                     <label><input type="checkbox" name="diet" /> Lactose intolerance</label>
                 </div>
                 <div class="filter-group">
@@ -53,29 +53,29 @@
                 </div>
                 <div class="filter-group">
                     <h4>Preparation Time</h4>
-                    <label><input type="checkbox" name="prep-time" /> Under 30 Minutes</label>
+                    <label><input type="checkbox" name="prep-time" class="checkbox-ai"/> Under 30 Minutes</label>
                     <label><input type="checkbox" name="prep-time" /> Under 1 Hour</label>
                 </div>
                 <div class="filter-group">
                     <h4>Portion size</h4>
                     <label><input type="checkbox" name="appliances" /> 1 person</label>
-                    <label><input type="checkbox" name="appliances" /> 2 people</label>
+                    <label><input type="checkbox" name="appliances" class="checkbox-ai"/> 2 people</label>
                     <label><input type="checkbox" name="appliances" /> 3 people</label>
                     <label><input type="checkbox" name="appliances" /> 4 people or more</label>
                 </div>
                 <div class="filter-group">
                     <h4>Kitchen Appliances</h4>
-                    <label><input type="checkbox" name="appliances" /> Oven</label>
+                    <label><input type="checkbox" name="appliances" class="checkbox-ai"/> Oven</label>
                     <label><input type="checkbox" name="appliances" /> Air Fryer</label>
                     <label><input type="checkbox" name="appliances" /> Fryer</label>
                     <label><input type="checkbox" name="appliances" /> Rice Cooker</label>
-                    <label><input type="checkbox" name="appliances" /> Microwave</label>
+                    <label><input type="checkbox" name="appliances" class="checkbox-ai"/> Microwave</label>
                     <label><input type="checkbox" name="appliances" /> Stand Mixer</label>
                 </div>
                 <div class="filter-group">
                     <h4>Extras</h4>
                     <label><input type="checkbox" name="extras" /> For Weight Loss</label>
-                    <label><input type="checkbox" name="extras" /> Budget-friendly</label>
+                    <label><input type="checkbox" name="extras" class="checkbox-ai"/> Budget-friendly</label>
                 </div>
             </aside>
 
@@ -85,7 +85,7 @@
                 <div class="category-grid">
                     <div class="category-card">Breakfast</div>
                     <div class="category-card">Lunch</div>
-                    <div class="category-card">Dinner</div>
+                    <div class="category-card category-ai">Dinner</div>
                     <div class="category-card">Drinks</div>
                     <div class="category-card">Soups</div>
                     <div class="category-card">Salads</div>
@@ -123,26 +123,27 @@
                 </div>
             </section>
             <section class="recipe-display-ai">
-                <h2>Recipes</h2>
+                <h2>For today, we recommend</h2>
+                <div class="recipe-card" style="margin-bottom: 2rem;">
+                    <img src="img/recipe2.jpg" class="image-recipe-ai" alt="Recipe 2" />
+                    <h3>Caprese Chicken Skillet</h3>
+                    <p>Preparation Time: 25 mins</p>
+                </div>
+                <h2>Other suggestions</h2>
                 <div class="recipe-grid">
                     <div class="recipe-card">
-                        <img src="img/recipe1.jpg" class="image-recipe" alt="Recipe 1" />
+                        <img src="img/recipe4.jpg" class="image-recipe-ai" alt="Recipe 3" />
+                        <h3>Margherita Flatbread Pizza</h3>
+                        <p>Preparation Time: 20 mins</p>
+                    </div>
+                    <div class="recipe-card">
+                        <img src="img/recipe1.jpg" class="image-recipe-ai" alt="Recipe 1" />
                         <h3>Spaghetti Aglio e Olio</h3>
                         <p>Preparation Time: 15 mins</p>
                     </div>
                     <div class="recipe-card">
-                        <img src="img/recipe2.jpg" class="image-recipe" alt="Recipe 2" />
-                        <h3>Caprese Chicken Skillet</h3>
-                        <p>Preparation Time: 25 mins</p>
-                    </div>
-                    <div class="recipe-card">
-                        <img src="img/recipe3.jpg" class="image-recipe" alt="Recipe 3" />
+                        <img src="img/recipe3.jpg" class="image-recipe-ai" alt="Recipe 3" />
                         <h3>Italian Sausage and Pepper Stir-Fry</h3>
-                        <p>Preparation Time: 20 mins</p>
-                    </div>
-                    <div class="recipe-card">
-                        <img src="img/recipe4.jpg" class="image-recipe" alt="Recipe 3" />
-                        <h3>Margherita Flatbread Pizza</h3>
                         <p>Preparation Time: 20 mins</p>
                     </div>
                 </div>
