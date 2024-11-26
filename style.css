@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.test-button {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 300px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.test-button.without-ai {
+    background-color: #ff6f61;
+    color: #ffffff;
+}
+
+.test-button.with-ai {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+.test-button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
