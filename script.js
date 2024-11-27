@@ -9,6 +9,8 @@ function uncheckAll() {
             input[i].checked = false;
         }
     }
+    const searchBar = document.getElementById("search-bar");
+    searchBar.value = "";
 }
 
 uncheckAll();
