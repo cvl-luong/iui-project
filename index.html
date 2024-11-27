@@ -10,6 +10,30 @@
 </head>
 
 <body>
+    <dialog id="chicken-modal">
+        <h2>Caprese Chicken Skillet</h2>
+        <hr>
+        <h3>Ingredients:</h3>
+        <ul>
+            <li>4 chicken breasts</li>
+            <li>2 tbsp olive oil</li>
+            <li>Salt and pepper</li>
+            <li>2 garlic cloves, minced</li>
+            <li>1/2 cup cherry tomatoes, halved</li>
+            <li>4 slices mozzarella</li>
+            <li>Fresh basil leaves</li>
+            <li>2 tbsp balsamic glaze</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol>
+            <li>Season chicken breasts with salt and pepper. Sear in olive oil over medium heat, 5-6 minutes per side.</li>
+            <li>Add garlic and cherry tomatoes to the skillet. Sauté for 2-3 minutes.</li>
+            <li>Top each chicken breast with mozzarella. Cover and let melt.</li>
+            <li>Garnish with fresh basil and drizzle with balsamic glaze.</li>
+        </ol>
+        <h3>FINAL TIME:</h3>
+        <span id="final-time"></span>
+    </dialog>
     <div id="button-container">
         <button class="test-button without-ai">Test Application Without AI</button>
         <button class="test-button with-ai">Test Application With AI</button>
@@ -53,7 +77,7 @@
                 </div>
                 <div class="filter-group">
                     <h4>Preparation Time</h4>
-                    <label><input type="checkbox" name="prep-time" class="checkbox-ai"/> Under 30 Minutes</label>
+                    <label><input type="checkbox" name="prep-time" /> Under 30 Minutes</label>
                     <label><input type="checkbox" name="prep-time" /> Under 1 Hour</label>
                 </div>
                 <div class="filter-group">
@@ -105,7 +129,7 @@
                         <h3>Spaghetti Aglio e Olio</h3>
                         <p>Preparation Time: 15 mins</p>
                     </div>
-                    <div class="recipe-card">
+                    <div class="recipe-card select-me">
                         <img src="img/recipe2.jpg" class="image-recipe" alt="Recipe 2" />
                         <h3>Caprese Chicken Skillet</h3>
                         <p>Preparation Time: 25 mins</p>
@@ -124,12 +148,12 @@
             </section>
             <section class="recipe-display-ai">
                 <h2>For today, we recommend</h2>
-                <div class="recipe-card" style="margin-bottom: 2rem;">
+                <div class="recipe-card select-me" style="margin-bottom: 2rem;">
                     <img src="img/recipe2.jpg" class="image-recipe-ai" alt="Recipe 2" />
                     <h3>Caprese Chicken Skillet</h3>
                     <p>Preparation Time: 25 mins</p>
                 </div>
-                <h2>Other suggestions</h2>
+                <h2>Other matches</h2>
                 <div class="recipe-grid">
                     <div class="recipe-card">
                         <img src="img/recipe4.jpg" class="image-recipe-ai" alt="Recipe 3" />

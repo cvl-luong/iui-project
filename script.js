@@ -1,4 +1,6 @@
 let ai = false;
+let start;
+let finish;
 
 function uncheckAll() {
     let input = document.getElementsByTagName('input');
@@ -11,10 +13,9 @@ function uncheckAll() {
 
 uncheckAll();
 
-
-
 document.querySelectorAll('.test-button').forEach(button => {
     button.addEventListener('click', function () {
+        start = new Date();
         if (this.innerText == "TEST APPLICATION WITH AI") {
             ai = true;
             checkCheckBoxes();
@@ -46,7 +47,6 @@ document.querySelectorAll('.category-card').forEach(button => {
 });
 
 function listenerRecipes() {
-
     document.querySelectorAll('.search-button').forEach(button => {
         if (ai) {
             button.addEventListener('click', function () {
@@ -61,6 +61,13 @@ function listenerRecipes() {
 
         }
     });
-
-
 }
+
+document.querySelectorAll(".select-me").forEach(chicken => {
+    chicken.addEventListener("click", () => {
+        document.getElementById('chicken-modal').showModal();
+        finish = new Date();
+        const text = `It took you ${Math.round(((finish.getTime() - start.getTime())) / 1000, 1) / 1} seconds to complete this task`;
+        document.getElementById("final-time").innerText = text;
+    })
+})
